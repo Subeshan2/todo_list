@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="shortcut icon" href="img.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <h1>ToDo-List</h1>
+    <form action="">
+        <h1 class="heading">Info..</h1>
+        <input type="text" id="name" class="check" placeholder=" Enter Your Name ">
+        <input type="number" id="age" class="check" placeholder=" Enter Your Age">
+        <div class="gender">
+            <label for="">GENDER</label>
+            <input type="radio" name="gen" value="Male"> <span> Male</span>
+            <input type="radio" name="gen" value="Female"> <span> Female</span>
+            <input type="hidden" class="check" id="gen">
+        </div>
+        <input type="email" id="email" class="check" placeholder=" Enter Your E-mail">
+        <input type="tel" id="contact" class="check" placeholder="Enter Your Contact Number">
+        <button id="save" onclick="save(event)">Save</button>
+        <input type="reset" id="clear">
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th> NAME </th>
+                <th> AGE </th>
+                <th> GENDER </th>
+                <th> E-MAIL </th>
+                <th> CONTACT NUMBER </th>
+                <th> DELETE </th>
+                <th> SUBMIT </th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+           
+        </tbody>
+    </table>
+    <button onclick="info(event)" id="info">?</button>
+    <div class="box"> 
+        <h1>info!</h1>
+        <p>Just enter your info! save and submit</p>
+        <button onclick="cl(event)" id="close">close!</button>
+    </div>
+</body>
+</html>
