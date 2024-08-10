@@ -90,7 +90,6 @@ input#clear{
 table{
     backdrop-filter: blur(30px);
     text-align: center;
-   
 }
 thead{
     color: rgb(211, 211, 36);
